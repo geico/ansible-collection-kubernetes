@@ -52,7 +52,7 @@
 - name: Upload Kubernetes manifest (if BGP for VIP)
   ansible.builtin.template:
     src: kube-vip.yaml.j2
-    dest: /etc/kubernetes/manifests/kube-vip.yaml
+    dest: /etc/kubernetes/manifests/kube-vip-bgp.yaml
     owner: root
     group: root
     mode: "0644"
